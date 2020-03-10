@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"templatewizard-add-all": "Додај ги сите параметри",
+	"templatewizard-cancel": "Откажи",
+	"templatewizard-close-dialog": "Го напуштате помошникот?",
+	"templatewizard-close-dialog-body": "Напуштајќи го помошникот ќе ги изгубите сите податоци што се ги додале во шаблонот.",
+	"templatewizard-close-dialog-retry": "Отфрли промени",
+	"templatewizard-default": "По основно: $1",
+	"templatewizard-desc": "Додаток на Викиуредникот помага во вметнувањето на шаблони",
+	"templatewizard-dialog-title": "Вметни шаблон",
+	"templatewizard-help": "Дознајте повеќе за Помошникот за шаблони",
+	"templatewizard-help-title": "Прочитајте ги помошните страници за Помошникот за шаблони на MediaWiki.org",
+	"templatewizard-insert": "Вметни",
+	"templatewizard-invalid-title": "Неважечки наслов",
+	"templatewizard-invalid-values": "Едно или повеќе од внесеното не одговараат на очекуваниот формат. Дали би сакале да го измените?",
+	"templatewizard-invalid-values-edit": "Уреди шаблон",
+	"templatewizard-invalid-values-insert": "Вметни шаблон",
+	"templatewizard-no-description": "Не постои опис за овој шаблон.",
+	"templatewizard-no-params-with-td": "Нема параметри во оваа документација на [$1 шаблонските податоци]. Можете да ги вметните шаблоните без параметри.",
+	"templatewizard-no-params-without-td": "Не можев да утврдам параметри за шаблонов поради отсуството на документација за [$1 шаблонските податоци]. Можете да го вметнете шаблонот без параметри.",
+	"templatewizard-no-templatedata": "Параметрите за овој шаблон се автосоздадени поради отсуството на [$1 шаблонски податоци]. Имајте на ум дека овие може да не се точни.",
+	"templatewizard-opens-in-new-tab": "Отвори во ново јазиче",
+	"templatewizard-parameters-optional": "Незадолжителни параметри",
+	"templatewizard-parameters-required": "Задолжителни параметри",
+	"templatewizard-parameters-suggested": "Предложени параметри",
+	"templatewizard-placeholder-default": "По основно: $1",
+	"templatewizard-placeholder-example": "на пр. $1",
+	"templatewizard-remove-all": "Отстрани ги сите параметри",
+	"templatewizard-remove-template": "Да го отстранам шаблонот?",
+	"templatewizard-remove-template-body": "Шаблонот што сакате да го отстраните содржи податоци што сте ги внеле. Отстранувајќи го ќе ги отстраните и нив. Ова дејство е неповратно.",
+	"templatewizard-remove-template-retry": "Отстрани шаблон",
+	"templatewizard-search-placeholder": "Пребарај шаблон",
+	"templatewizard-parambutton-add-title": "Додајте го параметарот „$1“",
+	"templatewizard-parambutton-remove-title": "Отстранете го параметарот „$1“",
+	"templatewizard-parambutton-required-title": "Се бара параметарот „$1“",
+	"templatewizard-remove-template-title": "Отстрани шаблон",
+	"templatewizard-link-to-template-title": "Преглед на шаблонот",
+	"templatewizard-use": "Употреба"
+}

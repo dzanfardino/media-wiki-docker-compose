@@ -5,27 +5,31 @@ services:
   mediawiki_wiki:
     image: kristophjunge/mediawiki
     container_name: mediawiki_wiki
+    command: tail -F anything
     environment:
-      MEDIAWIKI_SERVER: http://localhost:8080
-      MEDIAWIKI_SITENAME: MyWiki
-      MEDIAWIKI_LANGUAGE_CODE: en
-      MEDIAWIKI_SECRET_KEY: a6578339c8f73c8721b43241056d28af5be10dd922cd426ef10f086dd590aa8e
+      MEDIAWIKI_SERVER: http://wiki.ufficiok.com:80
+      MEDIAWIKI_SITENAME: "UfficioK Wiki Interna"
+      MEDIAWIKI_LANGUAGE_CODE: it
+      MEDIAWIKI_SECRET_KEY: d988f91bad523f0d213eaf898a37e4420759d402d78dc70e1f7fc5389300ab64
       MEDIAWIKI_DB_TYPE: mysql
       MEDIAWIKI_DB_HOST: mediawiki_mysql
       MEDIAWIKI_DB_PORT: 3306
       MEDIAWIKI_DB_NAME: wikidb
       MEDIAWIKI_DB_USER: wikiuser
       MEDIAWIKI_DB_TABLE_OPTIONS: ENGINE=InnoDB, DEFAULT CHARSET=binary
-      MEDIAWIKI_DB_PASSWORD: mysecret
+      MEDIAWIKI_DB_PASSWORD: 5KwjJx+/+m7WfFE^
       MEDIAWIKI_ENABLE_UPLOADS: 1
       MEDIAWIKI_EXTENSION_VISUAL_EDITOR_ENABLED: 1
       MEDIAWIKI_DEFAULT_SKIN: vector
     ports:
-    - 8080:8080
+      - 9127:8080
     depends_on:
-    - mediawiki_mysql
+      - mediawiki_mysql
     volumes:
-    - mediawiki_images:/images
+      - mediawiki_images:/images
+      - ./var/mediawiki/extensions/TemplateData:/var/www/mediawiki/extensions/TemplateData:ro
+      - ./var/mediawiki/extensions/WikiEditor:/var/www/mediawiki/extensions/WikiEditor:ro
+      - ./var/mediawiki/extensions/TemplateWizard:/var/www/mediawiki/extensions/TemplateWizard:ro
     #- ./../../../testdata/logo.png:/var/www/mediawiki/resources/assets/wiki.png:ro
     #- ./../../../testdata/ExtraLocalSettings.php:/var/www/mediawiki/ExtraLocalSettings.php:ro
   mediawiki_mysql:
@@ -34,10 +38,10 @@ services:
     environment:
       MYSQL_DATABASE: wikidb
       MYSQL_USER: wikiuser
-      MYSQL_PASSWORD: mysecret
+      MYSQL_PASSWORD: 5KwjJx+/+m7WfFE^
       MYSQL_RANDOM_ROOT_PASSWORD: 1
     volumes:
-    - mediawiki_mysql:/var/lib/mysql
+      - mediawiki_mysql:/var/lib/mysql
 volumes:
   mediawiki_images:
   mediawiki_mysql:
