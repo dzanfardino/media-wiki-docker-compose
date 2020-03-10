@@ -27,10 +27,10 @@ services:
       - mediawiki_mysql
     volumes:
       - mediawiki_images:/images
-      - ./var/mediawiki/extensions/TemplateData:/var/www/mediawiki/extensions/TemplateData:ro
-      - ./var/mediawiki/extensions/WikiEditor:/var/www/mediawiki/extensions/WikiEditor:ro
-      - ./var/mediawiki/extensions/TemplateWizard:/var/www/mediawiki/extensions/TemplateWizard:ro
-      - ExtraLocalSettings.php:/var/www/mediawiki/ExtraLocalSettings.php:ro
+      - ./extensions/TemplateData:/var/www/mediawiki/extensions/TemplateData:ro
+      - ./extensions/WikiEditor:/var/www/mediawiki/extensions/WikiEditor:ro
+      - ./extensions/TemplateWizard:/var/www/mediawiki/extensions/TemplateWizard:ro
+      - ./ExtraLocalSettings.php:/var/www/mediawiki/ExtraLocalSettings.php:ro
     #- ./../../../testdata/logo.png:/var/www/mediawiki/resources/assets/wiki.png:ro
     #- ./../../../testdata/ExtraLocalSettings.php:/var/www/mediawiki/ExtraLocalSettings.php:ro
   mediawiki_mysql:
