@@ -32,6 +32,6 @@ $wgLogo = 'mediawiki_images/logo.png';
 
 // OPTIONAL: Enable VisualEditor's experimental code features
 #$wgDefaultUserOptions['visualeditor-enable-experimental'] = 1;
-wfLoadExtension('TemplateData');
-wfLoadExtension('WikiEditor');
-wfLoadExtension('TemplateWizard');
+//wfLoadExtension('TemplateData');
+//wfLoadExtension('WikiEditor');
+//wfLoadExtension('TemplateWizard');
