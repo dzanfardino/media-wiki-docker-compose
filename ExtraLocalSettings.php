@@ -17,6 +17,7 @@ $wgAuthenticationTokenVersion = "1";
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['*']['read'] = true;
+$wgLogo = 'mediawiki_images/logo.png'
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
