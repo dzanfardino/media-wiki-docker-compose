@@ -5,7 +5,7 @@ services:
   mediawiki_wiki:
     image: kristophjunge/mediawiki
     container_name: mediawiki_wiki
-    command: tail -F anything
+    command: tail -F /dev/null
     environment:
       MEDIAWIKI_SERVER: http://wiki.ufficiok.com:80
       MEDIAWIKI_SITENAME: "UfficioK Wiki Interna"
